@@ -1,6 +1,6 @@
 package com.edu.cesde;
 
-public class Usuario {
+public class Persona {
     private Long id;
     private String nombre;
     private String email;
@@ -34,7 +34,6 @@ public class Usuario {
         return "Usuario{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+                ", email='" + email + '\'';
     }
 }
