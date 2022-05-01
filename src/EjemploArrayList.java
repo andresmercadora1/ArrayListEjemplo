@@ -11,8 +11,7 @@ public class EjemploArrayList {
 
         boolean salir = false;
         while (!salir) {
-            System.out.println("1=Ingresar usuario\n2=mostrar usuario\n" +
-                "3=eliminar usuario\n4=actualizar usuario\n5=Buscar usuario\n6=salir");
+            menu();
             int opt = Integer.parseInt(inputData.nextLine());
             switch (opt) {
                 case 1:
@@ -92,7 +91,18 @@ public class EjemploArrayList {
                     salir = true;
                     break;
             }
-
         }
+    }
+
+    public static void menu() {
+        System.out.println("======================================\n" +
+            "================ MENU ================\n" +
+            "===   1=Ingresar usuario           ===\n" +
+            "===   2=mostrar usuario            ===\n" +
+            "===   3=eliminar usuario           ===\n" +
+            "===   4=actualizar usuario         ===\n" +
+            "===   5=Buscar usuario             ===\n" +
+            "===   6=salir                      ===\n" +
+            "======================================");
     }
 }
